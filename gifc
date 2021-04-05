@@ -71,7 +71,6 @@ def pretty_print(gist_list):
 #Get gists
 if args.main == 'get':
     number_of_gists = args.number
-    print('Getting gists...')
     user_id = get_config_details('GIT_USER_ID')
     r = requests.get('https://api.github.com/users/{}/gists'.format(user_id))
     gist_list = []
